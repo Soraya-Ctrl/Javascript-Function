@@ -1,0 +1,18 @@
+var $ = function (selector){
+  var elements = [];
+  // Switch Statement Function
+  switch (selector) {
+      case "#some_id":
+          return document.getElementById("some_id");
+      case ".some_class":
+          return document.getElementsByClassName("some_class");
+      case "div":
+          return document.getElementsByTagName("div");
+      case "img.some_class":
+         if (selector = "img.some_class")
+         return document.getElementsByTagName("img");
+        
+  }
+  console.log(elements);
+  return elements;
+};
